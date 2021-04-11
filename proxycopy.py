@@ -40,7 +40,7 @@ if __name__ == "__main__":
     import sys
     import pyperclip
     
-    with open("c:\\Portable\\exec\\proxylist.txt") as f:
+    with open("proxylist.txt") as f:
         random_line = select_random_it(f, '\n')
         pyperclip.copy(random_line[:-1])
         sys.stdout.write(random_line)
